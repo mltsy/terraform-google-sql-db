@@ -116,8 +116,8 @@ output "additional_users" {
 }
 
 output "iam_users" {
-  description = "The list of the IAM users with access to the CloudSQL instance"
-  value       = var.iam_users
+  description = "The list of the IAM users with access to the CloudSQL instance, with emails as modified to fit into Postgres"
+  value       = local.iam_users
 }
 
 // Resources
